@@ -65,7 +65,7 @@ def _load_torch_state_dict(path: Path, device: torch.device) -> dict[str, Any]:
 
 
 @st.cache_resource(show_spinner=False)
-def load_detection_model(model_name: str):
+def load_detection_model(model_name: str) -> object | None:
     """Load a detection model by name.
 
     Parameters
@@ -180,7 +180,7 @@ def _safe_crop(
 
 
 def run_fast_pipeline(
-    det_model: YOLO | RTDETR | None,
+    det_model: object | None,
     clf_model: nn.Module | None,
     device: torch.device,
     image: Image.Image,

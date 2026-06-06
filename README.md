@@ -319,22 +319,16 @@ The public repository also includes qualitative detection samples and evaluation
 retail-shelf-dense-product-detection/
 │
 ├── app/
+│   ├── bootstrap.py
 │   └── streamlit_app.py
 │
 ├── src/
 │   └── retail_shelf_ai/
 │       ├── __init__.py
-│       ├── config.py
-│       ├── schemas.py
-│       ├── detection.py
-│       ├── classification.py
-│       ├── inventory.py
-│       ├── visualization.py
-│       └── pipeline.py
+│       └── streamlit_utils.py
 │
 ├── configs/
-│   ├── class_names.json
-│   └── model_config.yaml
+│   └── .gitkeep
 │
 ├── notebooks/
 │   ├── 01_yolov8_training.ipynb
@@ -363,16 +357,18 @@ retail-shelf-dense-product-detection/
 │   └── resnet50_visual_group_classifier.md
 │
 ├── scripts/
-│   └── run_inference.py
-│
-├── weights/
 │   └── .gitkeep
 │
+├── weights/
+│   ├── .gitkeep
+│   └── README.md
+│
+├── NOTICE.md
+├── packages.txt
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
-
 ---
 
 ## Linux / Codespaces System Dependencies
@@ -538,25 +534,31 @@ This repository is intended as a clean public portfolio version.
 Current status:
 
 ```text
-Public portfolio version under organization and cleanup.
+Public portfolio showcase version complete.
 ```
 
 Completed:
 
 - Dense object detection training
 - YOLOv8m and RT-DETR-L benchmarking
-- DINOv2 + K-Means visual pseudo-labeling
+- DINOv2 + K-Means visual pseudo-labeling methodology
 - 91 visual product-group generation
-- Optional ResNet-50 visual group classifier
+- Optional ResNet-50 visual group classification experiment
 - Streamlit audit dashboard prototype
+- Local demo validation with YOLOv8m, RT-DETR-L, and ResNet-50 weights
 - Technical report
+- Cleaned public notebooks
+- Public visual result assets
+- Model cards
+- Weights and publication policy documentation
 
-In progress:
+Intentionally excluded from Git history:
 
-- Clean repository packaging
-- Modular source code organization
-- Public demo assets
-- Model card documentation
+- Trained weights
+- Full datasets
+- Derived crop datasets
+- Raw experiment archives
+- Large prediction files
 
 ---
 
