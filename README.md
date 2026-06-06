@@ -254,15 +254,36 @@ The project includes an interactive Streamlit dashboard for retail shelf auditin
 - Display inventory-style table
 - Export audit results as CSV
 
-### Demo Preview
+### Visual Result Assets
 
-> Add screenshots after uploading assets to the repository.
+The current public repository includes qualitative detection samples and evaluation visualizations for both YOLOv8m and RT-DETR-L.
 
-```md
-![Streamlit Demo](assets/streamlit_demo.png)
-![YOLO Prediction](assets/yolo_prediction_sample.png)
-![RT-DETR Prediction](assets/rtdetr_prediction_sample.png)
-```
+Streamlit interface screenshots will be added after the demo application is cleaned and moved into the final repository structure.
+
+#### Qualitative Detection Samples
+
+| YOLOv8m Dense Shelf Prediction | RT-DETR-L Dense Shelf Prediction |
+|---|---|
+| ![YOLOv8m dense shelf prediction](assets/yolo_prediction_sample.jpg) | ![RT-DETR-L dense shelf prediction](assets/rtdetr_prediction_sample.jpg) |
+
+#### YOLOv8m Training Metrics
+
+![YOLOv8m training metrics](assets/yolo_training_results.png)
+
+#### Detection Curves
+
+| YOLOv8m Detection Curves | RT-DETR-L Detection Curves |
+|---|---|
+| ![YOLOv8m detection curves](assets/yolo_detection_curves.png) | ![RT-DETR-L detection curves](assets/rtdetr_detection_curves.png) |
+
+<details>
+<summary>Normalized Confusion Matrices</summary>
+
+| YOLOv8m | RT-DETR-L |
+|---|---|
+| ![YOLOv8m normalized confusion matrix](assets/yolo_confusion_matrix_normalized.png) | ![RT-DETR-L normalized confusion matrix](assets/rtdetr_confusion_matrix_normalized.png) |
+
+</details>
 
 ---
 
@@ -296,10 +317,13 @@ retail-shelf-dense-product-detection/
 │   └── 04_resnet50_visual_group_classification.ipynb
 │
 ├── assets/
-│   ├── streamlit_demo.png
-│   ├── yolo_prediction_sample.png
-│   ├── rtdetr_prediction_sample.png
-│   └── metrics_comparison.png
+│   ├── yolo_prediction_sample.jpg
+│   ├── rtdetr_prediction_sample.jpg
+│   ├── yolo_training_results.png
+│   ├── yolo_detection_curves.png
+│   ├── rtdetr_detection_curves.png
+│   ├── yolo_confusion_matrix_normalized.png
+│   └── rtdetr_confusion_matrix_normalized.png
 │
 ├── reports/
 │   └── retail_shelf_object_detection_report.pdf
