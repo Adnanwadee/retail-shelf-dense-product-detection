@@ -40,6 +40,22 @@ This repository is structured as a clean public portfolio version of the origina
 
 ---
 
+## 📚 Public Repository Artifacts
+
+| Artifact | Link | Purpose |
+|---|---|---|
+| Technical report | [reports/retail_shelf_object_detection_report.pdf](reports/retail_shelf_object_detection_report.pdf) | Full methodology, experiments, evaluation, limitations, and interface explanation |
+| YOLOv8m training notebook | [notebooks/01_yolov8_training.ipynb](notebooks/01_yolov8_training.ipynb) | Cleaned YOLOv8m training reference without heavy outputs |
+| RT-DETR-L training notebook | [notebooks/02_rtdetr_training.ipynb](notebooks/02_rtdetr_training.ipynb) | Cleaned RT-DETR-L training reference without heavy outputs |
+| DINOv2 + K-Means pseudo-labeling overview | [notebooks/03_dinov2_kmeans_pseudo_labeling_overview.md](notebooks/03_dinov2_kmeans_pseudo_labeling_overview.md) | Public explanation of the unsupervised visual grouping pipeline |
+| ResNet-50 visual group classification notebook | [notebooks/04_resnet50_visual_group_classification.ipynb](notebooks/04_resnet50_visual_group_classification.ipynb) | Cleaned optional classification experiment over 91 pseudo-labeled visual groups |
+| YOLOv8m model card | [model_cards/yolov8m_detector.md](model_cards/yolov8m_detector.md) | Detector configuration, results, deployment notes, and limitations |
+| RT-DETR-L model card | [model_cards/rtdetr_detector.md](model_cards/rtdetr_detector.md) | Transformer detector configuration, results, deployment notes, and limitations |
+| ResNet-50 model card | [model_cards/resnet50_visual_group_classifier.md](model_cards/resnet50_visual_group_classifier.md) | Visual product-group classifier notes and limitations |
+| Weights policy | [weights/README.md](weights/README.md) | Expected local model files and why weights are excluded from Git history |
+
+---
+
 ## 🎯 Problem Statement
 
 Retail shelf monitoring is more difficult than standard object detection because products are:
@@ -313,7 +329,7 @@ retail-shelf-dense-product-detection/
 ├── notebooks/
 │   ├── 01_yolov8_training.ipynb
 │   ├── 02_rtdetr_training.ipynb
-│   ├── 03_dinov2_kmeans_pseudo_labeling.ipynb
+│   ├── 03_dinov2_kmeans_pseudo_labeling_overview.md
 │   └── 04_resnet50_visual_group_classification.ipynb
 │
 ├── assets/
