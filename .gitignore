@@ -238,6 +238,7 @@ __marimo__/
 weights/*
 models/*
 !weights/.gitkeep
+!weights/README.md
 !models/.gitkeep
 
 # ----------------------------
