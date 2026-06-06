@@ -270,11 +270,21 @@ The project includes an interactive Streamlit dashboard for retail shelf auditin
 - Display inventory-style table
 - Export audit results as CSV
 
+### Streamlit Demo Preview
+
+The Streamlit dashboard was tested locally with the YOLOv8m, RT-DETR-L, and optional ResNet-50 visual product-group classifier weights placed under the local `weights/` directory.
+
+| YOLOv8m Demo | RT-DETR-L Demo |
+|---|---|
+| ![YOLOv8m Streamlit demo](assets/streamlit_yolo_demo.png) | ![RT-DETR-L Streamlit demo](assets/streamlit_rtdetr_demo.png) |
+
+#### Inventory Dashboard
+
+![Streamlit inventory dashboard](assets/streamlit_inventory_dashboard.png)
+
 ### Visual Result Assets
 
-The current public repository includes qualitative detection samples and evaluation visualizations for both YOLOv8m and RT-DETR-L.
-
-Streamlit interface screenshots will be added after the demo application is cleaned and moved into the final repository structure.
+The public repository also includes qualitative detection samples and evaluation visualizations for both YOLOv8m and RT-DETR-L.
 
 #### Qualitative Detection Samples
 
@@ -333,6 +343,9 @@ retail-shelf-dense-product-detection/
 │   └── 04_resnet50_visual_group_classification.ipynb
 │
 ├── assets/
+│   ├── streamlit_yolo_demo.png
+│   ├── streamlit_rtdetr_demo.png
+│   ├── streamlit_inventory_dashboard.png
 │   ├── yolo_prediction_sample.jpg
 │   ├── rtdetr_prediction_sample.jpg
 │   ├── yolo_training_results.png
