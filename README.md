@@ -560,6 +560,18 @@ In progress:
 
 ---
 
+## Publication Notice
+
+This repository is published as a public portfolio and academic project showcase.
+
+No open-source license is currently granted. All rights are reserved unless explicitly stated otherwise.
+
+The public repository includes documentation, cleaned notebooks, visual result assets, model cards, and a Streamlit demo interface. Trained model weights, full datasets, derived crop datasets, large prediction files, and raw experiment archives are intentionally excluded from Git history.
+
+For details, see [NOTICE.md](NOTICE.md).
+
+---
+
 ## 📄 Disclaimer
 
 This project is an academic and portfolio computer vision prototype.
