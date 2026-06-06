@@ -22,7 +22,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from PIL import Image
 from torchvision import models, transforms
-from ultralytics import RTDETR, YOLO
 
 
 LOGGER = logging.getLogger(__name__)
@@ -66,7 +65,7 @@ def _load_torch_state_dict(path: Path, device: torch.device) -> dict[str, Any]:
 
 
 @st.cache_resource(show_spinner=False)
-def load_detection_model(model_name: str) -> YOLO | RTDETR | None:
+def load_detection_model(model_name: str):
     """Load a detection model by name.
 
     Parameters
@@ -76,7 +75,7 @@ def load_detection_model(model_name: str) -> YOLO | RTDETR | None:
 
     Returns
     -------
-    YOLO | RTDETR | None
+    object | None
         Loaded detector if weights exist and loading succeeds; otherwise ``None``.
     """
     normalized_name = model_name.strip().upper()
@@ -102,6 +101,8 @@ def load_detection_model(model_name: str) -> YOLO | RTDETR | None:
         return None
 
     try:
+        from ultralytics import RTDETR, YOLO
+
         if normalized_name == "YOLO":
             return YOLO(str(model_path))
         return RTDETR(str(model_path))

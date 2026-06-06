@@ -362,6 +362,21 @@ retail-shelf-dense-product-detection/
 
 ---
 
+## Linux / Codespaces System Dependencies
+
+Some Linux environments require OpenCV system libraries before importing `cv2` or `ultralytics`.
+
+For Codespaces or Debian/Ubuntu-based environments:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y libgl1 libglib2.0-0
+```
+
+This repository also includes a `packages.txt` file for environments that support installing system packages from a package list.
+
+---
+
 ## ⚙️ Installation
 
 ```bash
