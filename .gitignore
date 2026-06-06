@@ -216,3 +216,112 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# ============================================================
+# Project-specific ignores for retail shelf dense detection
+# ============================================================
+
+# ----------------------------
+# Model weights and exports
+# ----------------------------
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.h5
+*.ckpt
+*.safetensors
+
+weights/*
+models/*
+!weights/.gitkeep
+!models/.gitkeep
+
+# ----------------------------
+# Datasets and raw data
+# ----------------------------
+data/
+datasets/
+raw_data/
+external_data/
+SKU110K/
+SKU110Dataset_resized640/
+
+# ----------------------------
+# Training outputs and experiment logs
+# ----------------------------
+runs/
+wandb/
+mlruns/
+logs/
+outputs/
+checkpoints/
+artifacts/
+experiments/
+training_outputs/
+
+# ----------------------------
+# Large evaluation outputs
+# ----------------------------
+**/predictions.json
+**/instances_predictions.json
+**/coco_predictions.json
+**/evaluation_cache/
+**/val*/
+**/test_predictions/
+
+# ----------------------------
+# Kaggle / notebook temporary files
+# ----------------------------
+kaggle/
+working/
+input/
+.ipynb_checkpoints/
+*.tmp
+*.temp
+
+# ----------------------------
+# Python cache
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------------
+# Environment and secrets
+# ----------------------------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ----------------------------
+# Local IDE / OS files
+# ----------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Uploaded raw archives
+# ----------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz 
