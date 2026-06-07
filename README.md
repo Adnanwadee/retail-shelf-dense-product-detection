@@ -593,14 +593,17 @@ Dataset ownership is not claimed. Dataset usage should follow the terms of the o
 
 **Adnan Wadee Abdullah**  
 Applied AI Engineer — Computer Vision · NLP Transformers · LLM/RAG Systems · Explainable AI
-**Abdullah Samarah**
-**Ammar Alrousan**  
+ 
 [![GitHub](https://img.shields.io/badge/GitHub-Adnanwadee-181717?style=flat-square&logo=github)](https://github.com/Adnanwadee)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Adnan%20Abdullah-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/adnan-abdullah-5a263b300)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail)](mailto:eng.adnanabdullah22@gmail.com)
 
 ---
 
+**Abdullah Samarah**
+**Ammar Alrousan** 
+
+---
 <div align="center">
 
 **Built as a dense computer vision system for retail shelf understanding, visual grouping, and deployment-oriented AI demonstration.**
