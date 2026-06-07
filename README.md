@@ -40,7 +40,7 @@ This repository is structured as a clean public portfolio version of the origina
 
 ---
 
-## 📚 Public Repository Artifacts
+##  Public Repository Artifacts
 
 | Artifact | Link | Purpose |
 |---|---|---|
@@ -56,7 +56,7 @@ This repository is structured as a clean public portfolio version of the origina
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Retail shelf monitoring is more difficult than standard object detection because products are:
 
@@ -81,7 +81,7 @@ The goal is to build a practical foundation for:
 
 ---
 
-## 🚀 Key Contributions
+##  Key Contributions
 
 - Built a dense retail product detection pipeline for supermarket shelf images.
 - Benchmarked **YOLOv8m** and **RT-DETR-L** on a high-density retail object detection task.
@@ -94,7 +94,7 @@ The goal is to build a practical foundation for:
 
 ---
 
-## 🧠 Core Technical Idea
+##  Core Technical Idea
 
 The original dataset was **not manually labeled into multiple product categories**.
 
@@ -115,7 +115,7 @@ This makes the project stronger than a simple YOLO training task because it adds
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```text
 Input Shelf Image
@@ -147,7 +147,7 @@ CSV Export
 
 ---
 
-## 🧩 Methodology
+##  Methodology
 
 ### 1. Dense Product Detection
 
@@ -213,7 +213,7 @@ The classification layer is useful for inventory-style grouping and dashboard an
 
 ---
 
-## 📊 Detection Results
+##  Detection Results
 
 | Model | mAP@50 | mAP@50-95 | Precision | Recall | F1-score | Avg. Inference |
 |---|---:|---:|---:|---:|---:|---:|
@@ -236,7 +236,7 @@ RT-DETR-L remained useful as a transformer-based comparison model, but its highe
 
 ---
 
-## 🧪 Training Setup
+##  Training Setup
 
 | Component | Configuration |
 |---|---|
@@ -254,7 +254,7 @@ RT-DETR-L remained useful as a transformer-based comparison model, but its highe
 
 ---
 
-## 🖥️ Streamlit Demo
+##  Streamlit Demo
 
 The project includes an interactive Streamlit dashboard for retail shelf auditing.
 
@@ -313,7 +313,7 @@ The public repository also includes qualitative detection samples and evaluation
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 retail-shelf-dense-product-detection/
@@ -386,7 +386,7 @@ This repository also includes a `packages.txt` file for environments that suppor
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/Adnanwadee/retail-shelf-dense-product-detection.git
@@ -415,7 +415,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Streamlit App
+##  Run the Streamlit App
 
 ```bash
 streamlit run app/streamlit_app.py
@@ -429,7 +429,7 @@ http://localhost:8501
 
 ---
 
-## 🧱 Model Weights
+##  Model Weights
 
 Model weights are not stored directly inside the repository to keep Git history clean and avoid large binary files.
 
@@ -451,7 +451,7 @@ Recommended distribution options:
 
 ---
 
-## 🔐 Publication and Protection Policy
+##  Publication and Protection Policy
 
 This repository is intended as a clean public portfolio version.
 
@@ -477,7 +477,7 @@ This repository is intended as a clean public portfolio version.
 
 ---
 
-## ⚠️ Technical Notes
+##  Technical Notes
 
 - The original detection dataset used a **single generic product class**.
 - The 91 groups are **unsupervised visual pseudo-labels**, not manually verified commercial SKU labels.
@@ -489,7 +489,7 @@ This repository is intended as a clean public portfolio version.
 
 ---
 
-## ❗ Limitations
+##  Limitations
 
 - The system currently works on static images, not continuous video streams.
 - Visual product groups are not guaranteed to match real-world SKU identities.
@@ -501,7 +501,7 @@ This repository is intended as a clean public portfolio version.
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - Add verified SKU-level labels linked to a real product database.
 - Improve fine-grained product-group classification.
@@ -515,7 +515,7 @@ This repository is intended as a clean public portfolio version.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -529,7 +529,7 @@ This repository is intended as a clean public portfolio version.
 
 ---
 
-## 📌 Project Status
+##  Project Status
 
 Current status:
 
@@ -593,7 +593,8 @@ Dataset ownership is not claimed. Dataset usage should follow the terms of the o
 
 **Adnan Wadee Abdullah**  
 Applied AI Engineer — Computer Vision · NLP Transformers · LLM/RAG Systems · Explainable AI
-
+**Abdullah Samarah**
+**Ammar Alrousan**  
 [![GitHub](https://img.shields.io/badge/GitHub-Adnanwadee-181717?style=flat-square&logo=github)](https://github.com/Adnanwadee)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Adnan%20Abdullah-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/adnan-abdullah-5a263b300)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail)](mailto:eng.adnanabdullah22@gmail.com)
