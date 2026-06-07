@@ -589,8 +589,15 @@ Dataset ownership is not claimed. Dataset usage should follow the terms of the o
 
 ---
 
-## 👤 Author
+##  Author
+---
 
+
+- Adnan Wadee Abdullah
+- Abdullah Samarah
+- Ammar Alrousan
+
+---
 **Adnan Wadee Abdullah**  
 Applied AI Engineer — Computer Vision · NLP Transformers · LLM/RAG Systems · Explainable AI
  
@@ -600,10 +607,6 @@ Applied AI Engineer — Computer Vision · NLP Transformers · LLM/RAG Systems �
 
 ---
 
-**Abdullah Samarah**
-**Ammar Alrousan** 
-
----
 <div align="center">
 
 **Built as a dense computer vision system for retail shelf understanding, visual grouping, and deployment-oriented AI demonstration.**
